@@ -1,0 +1,19 @@
+[build]
+  publish = "."
+
+[[redirects]]
+  from = "/download"
+  to = "https://chrome.google.com/webstore/detail/your-extension-id"
+  status = 302
+
+[[headers]]
+  for = "/*"
+    [headers.values]
+      X-Frame-Options = "DENY"
+      X-Content-Type-Options = "nosniff"
+      Content-Security-Policy = "default-src 'self'"
+
+[[headers]]
+  for = "/assets/*"
+    [headers.values]
+      Cache-Control = "public, max-age=31536000, immutable"

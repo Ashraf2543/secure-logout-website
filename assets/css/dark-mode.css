@@ -1,0 +1,30 @@
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-text: #e2e8f0;
+        --color-text-light: #94a3b8;
+        --color-bg: #0f172a;
+        --color-bg-light: #1e293b;
+        --color-border: #334155;
+    }
+
+    .hero {
+        background: linear-gradient(to bottom, #0f172a 0%, #1e293b 100%);
+    }
+
+    .browser-mockup {
+        background: var(--color-bg-light);
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+    }
+
+    .extension-preview {
+        border-color: var(--color-border);
+    }
+
+    .extension-preview__body {
+        background: var(--color-bg);
+    }
+
+    .session-item__btn {
+        background: var(--color-bg-light);
+    }
+}
